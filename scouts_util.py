@@ -4,7 +4,23 @@ import datetime
 import picamera
 import io
 from subprocess import call, Popen, PIPE, DEVNULL
+black = 0, 0, 0
+white = 255, 255, 255
+purple = 116, 20, 220
 
+
+def show_text(screen, afont, x, y, text):
+    mytext = afont.render(text, True, white, purple)
+    mytextRect = mytext.get_rect()
+    mytextRect.left = x
+    mytextRect.top = y
+    screen.blit(mytext, mytextRect)
+
+def show_text_centre(screen, afont, x, y, text):
+    mytext = afont.render(text, True, white, purple)
+    mytextRect = mytext.get_rect()
+    mytextRect.center = (x, y)
+    screen.blit(mytext, mytextRect)
 
 def load_fonts():
     smallfont = pygame.font.Font('/home/pi/digital_maker/fonts/NunitoSans-Light.ttf', 24)
