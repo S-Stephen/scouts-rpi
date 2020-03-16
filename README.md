@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/tramsdale/scouts-rpi) 
+
 # scouts-rpi
 
 This is a simple demo project for 1st Histon Scouts:
